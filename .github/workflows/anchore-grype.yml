@@ -38,6 +38,7 @@ jobs:
         id: scan
         with:
           path: "."
+          cache-db: true
           fail-build: true
           severity-cutoff: critical
       - name: Upload vulnerability report
